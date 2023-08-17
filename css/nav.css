@@ -1,0 +1,107 @@
+
+/*Start Global Rules  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+   font-family: "open Sans" ,sans-serif; 
+
+}
+ul{
+    list-style: none;
+}
+/* .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+/* small */
+@media (min-width: 768px)
+{
+    .container{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width: 992px)
+{
+    .container{
+        width: 970px;
+    }
+}
+/* small */
+@media (min-width: 1200px)
+{
+    .container{
+        width: 1170px;
+        
+    }
+}
+
+:root{
+    --primary:#cf268a
+    
+}
+nav{
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #cf268a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    background-color: transparent;
+    margin: 0 10px 0 10px;
+}
+.listbarr{
+    display: flex;
+    padding: 15px;
+}
+.listbarr li a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    
+}
+.listbarr li :hover{
+   
+    background-color: white;
+    color: var(--primary);
+    
+    transition: 0.5s;
+}
+.listbar img{
+    display: none;
+}
+@media  screen and (max-width: 768px){
+    .listbarr{
+        display: none;
+    }
+    .listbar img{
+    display: block;
+    height: 34px;
+    position: relative;
+    right: 20px;
+    margin-top: 36px;
+     
+
+    }
+    .listbarrr {
+         display: flex;
+    }
+}

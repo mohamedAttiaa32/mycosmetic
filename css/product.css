@@ -1,0 +1,643 @@
+
+/*Start Global Rules  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+   font-family: "open Sans" ,sans-serif; 
+
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+/* small */
+@media (min-width: 768px)
+{
+    .container{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width: 992px)
+{
+    .container{
+        width: 970px;
+    }
+}
+/* small */
+@media (min-width: 1200px)
+{
+    .container{
+        width: 1170px;
+        
+    }
+}
+
+:root{
+    --primary:#cf268a
+    
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    height: 20px;
+    border-radius: 10px;
+}
+nav{
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #cf268a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    background-color: transparent;
+    margin: 0 10px 0 10px;
+}
+.listbarr{
+    display: flex;
+    padding: 15px;
+}
+.listbarr li a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    
+}
+.listbarr li :hover{
+   
+    background-color: white;
+    color: var(--primary);
+    
+    transition: 0.5s;
+}
+.listbar img{
+    display: none;
+}
+@media  screen and (max-width: 768px){
+    .listbarr{
+        display: none;
+    }
+    .listbar img{
+    display: block;
+     height: 40px;
+    position: relative;
+    right: 20px;
+     
+
+    }
+    .listbarrr {
+         display: flex;
+    }
+}
+.sectionpone{
+    display: flex;
+    
+    justify-content: center;
+}
+.sectionpone .container{
+   margin-top: 170px; 
+width: 90%;
+}
+.sectionpone .container .imge{
+      position: relative;
+}
+
+.sectionpone .container .imge img{ 
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+   
+
+
+}
+
+.sectionpone .container .imge h2{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    right: 27%;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+@media  screen and (max-width: 768px){
+    .sectionpone {
+        width: 100%;
+    }
+    .sectionpone .container {
+        width: 100%;
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionpone .container .imge h2 {
+        font-size: 40px;
+       
+    }
+    .sectionpone .container .imge {
+        width: 100%;
+    }
+    .sectionpone .container .imge img{
+        width: 100%;
+    }
+   
+    
+}
+.sectionpone .container .twocards{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.sectionpone .container .twocards img{
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    
+}
+
+.sectionpone .container .twocards h2{
+    text-align: center;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+
+}
+.sectionpone .container .twocards .card {
+    background-color: white;
+    width: 280px;
+    margin-top: 20px;
+  padding-left: 12px;
+    border: 1px solid transparent;
+    margin-left: 16px;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 0px 5px 2px rgba(222,205,222,1);
+
+    padding-bottom: 12px;
+}
+.sectionpone .container .twocards .card .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+.sectionpone .container .twocards .card .text P:nth-of-type(5){
+    width: 85%;
+    line-height: 1.2;
+}
+.sectionpone .container .twocards .card a {
+    text-decoration: none;
+    background-color: var(--primary);
+    color: white;
+    font-size: 19px;
+    padding: 12px 35px;
+    border-radius: 8px;
+    transition: 0.5s;
+    font-weight: bold;
+    transform: translate(20px 20px);
+    
+    
+
+}
+.sectionpone .container .twocards .card div{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+   
+}
+.sectionpone .container .twocards .card div a{
+    border: 1px solid var(--primary);
+
+}
+.sectionpone .container .twocards .card div a:hover{
+    background-color: white;
+   
+    color:black
+}
+@media  screen and (max-width: 768px){
+    .sectionpone .container .twocards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+
+
+.sectionptwo{
+    display: flex;
+    
+    justify-content: center;
+}
+.sectionptwo .container{
+   margin-top: 170px; 
+width: 90%;
+
+
+
+}
+.sectionptwo .container .imge{
+      position: relative;
+      width: 100%;
+}
+
+.sectionptwo .container .imge img{ 
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+   
+
+
+}
+
+.sectionptwo .container .imge h2{
+   
+    text-align: center;
+    color: rgb(140, 16, 16);
+    position: absolute;
+    top: 31%;
+    left: 13%;
+    right: 21%;
+    color: white;
+    font-size: 70px;
+    width: 70%;
+}
+
+@media  screen and (max-width: 768px){
+
+    .sectionptwo .container .imge h2 {
+        font-size: 30px;
+        top: 38%;
+        left: 15%;
+        width: 70%;
+        font-size: 40px;
+       
+        margin-right:15px;
+        margin-bottom: 20px;
+    }
+}
+.sectionptwo .container .twocards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.sectionptwo .container .twocards img{
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    
+}
+
+.sectionptwo .container .twocards  .card h2{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.sectionptwo .container .twocards  .one h2{
+    width: 90%;
+}
+.sectionptwo .container .twocards .card {
+    background-color: white;
+    width: 280px;
+    margin-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+    border: 1px solid transparent;
+    margin-left: 16px;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 0px 5px 2px rgba(222,205,222,1);
+
+    padding-bottom: 12px;
+}
+.sectionptwo .container .twocards .card .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+.sectionptwo .container .twocards .card .text P:nth-of-type(5){
+    width: 85%;
+    line-height: 1.2;
+}
+.sectionptwo .container .twocards .card a {
+    text-decoration: none;
+    background-color: var(--primary);
+    color: white;
+    font-size: 19px;
+    padding: 12px 35px;
+    border-radius: 8px;
+    transition: 0.5s;
+    font-weight: bold;
+    transform: translate(20px 20px);
+    
+    
+
+}
+.sectionptwo .container .twocards .card div{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+   
+}
+.sectionptwo .container .twocards .card div a{
+    border: 1px solid var(--primary);
+
+}
+.sectionptwo .container .twocards .card div a:hover{
+    background-color: white;
+  
+    color:black
+}
+@media  screen and (max-width: 768px){
+    .sectionptwo .container .twocards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionptwo .container .imge {
+        width: 100%;
+    }
+    .sectionptwo .container .imge img{
+        width: 100%;
+    }
+   
+ 
+  
+   
+}
+
+
+
+.sectionpthree{
+    width: 100%;
+    background-color: var(--primary);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 70px;
+    z-index: 500 !important;
+    
+}
+.sectionpthree .container{
+ width: 90%;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ flex-wrap: wrap;
+ 
+}
+@media  screen and (max-width: 768px){
+    .sectionpthree .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .sectionpthree .container .cardone{
+        margin-bottom: 60px;
+    }
+    .sectionpthree .container .cardtwo{
+        margin-bottom: 60px;
+    }
+   
+}
+
+.sectionsix{
+    width: 100%;
+    background-color: var(--primary);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 70px;
+    z-index: 500 !important;
+    margin-top: 40px;
+    
+}
+.sectionsix .container{
+ width: 90%;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ flex-wrap: wrap;
+ 
+}
+@media  screen and (max-width: 768px){
+    .sectionsix .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .sectionsix .container .cardone{
+        margin-bottom: 60px;
+    }
+    .sectionsix .container .cardtwo{
+        margin-bottom: 60px;
+    }
+   
+}
+
+.sectionsix .container .two {
+    width: 50%;
+}
+.sectionsix .container img:not(.sectionsix .container .cardone img){
+    height: 25px;
+    width: 25px;
+  
+}
+.sectionsix .container .cardone{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -60px;
+}
+.sectionsix .container .cardone img{
+    height: 130px;
+    margin-bottom: 25px;
+}
+.sectionsix .container .cardone p{
+    width: 90%;
+    text-align: center;
+}
+
+.sectionsix .container .cardtwo{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.sectionsix .container .cardtwo h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+.sectionsix .container .cardtwo .phone{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionsix .container .cardtwo p{
+    margin-left: 10px;
+}
+.sectionsix .container .cardtwo .adress{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionsix .container .cardtwo i{
+    font-size: 30px;
+    margin: 0 10px;
+    height: 55px;
+    width: 55px;
+    padding: 13px;
+
+}
+.sectionsix .container .cardtwo i:first-of-type{
+color: #1877f2;
+background-color: white;
+border-radius: 50%;
+text-align: center;
+margin-bottom: 40px;
+
+}
+
+.sectionsix .container .cardtwo i:nth-of-type(2){
+ color: #eb09aa;
+ background-color: white;
+ border-radius: 50%;
+text-align: center;
+margin-bottom: 40px;
+}
+.sectionsix .container .cardtwo i:nth-of-type(3){
+color: rgb(179, 23, 23);
+background-color: white;
+border-radius: 50%;
+text-align: center;
+margin-bottom: 40px;
+}
+
+
+
+.sectionsix .container .cardthree{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+.sectionsix .container .cardthree h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+.sectionsix .container .cardthree .work{
+    margin-bottom: 40px;
+    text-align: center;
+}
+ 
+.sectionsix .container .cardthree .workdate{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionsix .container .cardthree .workdate  .pp p{
+  margin-left: 15px;
+}
+.sectionsix .container .cardthree .vacation h4{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sectionsix .container .cardthree .vacation .vacationdate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionsix .container .cardthree .vacation .vacationdate .ppp p{
+    margin-left: 15px;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.363)
+}
+
+.Copyright{
+    background-color: var(--primary);
+}
+.Copyright{
+    padding: 20px 0;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+
